@@ -108,3 +108,15 @@ docker-compose -f node2.yaml up -d
 </pre></code>
 
 
+
+### go lang 설치
+wget https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz
+
+### 소스 받기
+go get -u github.com/hyperledger/fabric
+
+### 이벤트 소스 컴파일
+
+sudo apt install -y libltdl-dev
+cd $GOPATH/src/github.com/hyperledger/fabric/examples/events/eventsclient
+go build
